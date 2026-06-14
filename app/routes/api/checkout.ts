@@ -35,7 +35,7 @@ export const POST = createRoute(async (c) => {
       metadata: {
         user_id: user.id
       },
-      successUrl: "http://localhost:5173/"
+      successUrl: "https://seedclue.pages.dev/"
     })
 
 
