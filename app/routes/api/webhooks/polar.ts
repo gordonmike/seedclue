@@ -12,7 +12,10 @@ export const POST = createRoute(async (c) => {
   if (userId) {
     const supabase = createClient(c.env.SUPABASE_URL as string, c.env.SUPABASE_ANON_KEY as string)
     
-    const { error } = await supabase.from('profiles').upsert({ id: userId, is_pro: true })
+    const { error } = await supabase.from('profiles').upsert({
+      id: userId,
+      is_pro: true,
+      subscribed_at: new Date().toISOString() })
     
     if (error) {
       console.log("❌ SUPABASE ERROR:", error.message)
