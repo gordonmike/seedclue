@@ -5,6 +5,9 @@ import honox from 'honox/vite'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  server: {
+    allowedHosts: true
+  },
   plugins: [
     honox({
       devServer: { adapter },
@@ -14,3 +17,4 @@ export default defineConfig({
     build()
   ]
 })
+
