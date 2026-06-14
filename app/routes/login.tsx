@@ -47,7 +47,7 @@ export const POST = createRoute(async (c) => {
 export default createRoute((c) => {
   return c.render(
     <div style="max-width: 400px; margin: 40px auto; border: 1px solid #ccc; padding: 20px;">
-      <h2>Login to Scoutio</h2>
+      <h2>Login to Seed Clue</h2>
       
       <form method="post" style="display: flex; flex-direction: column; gap: 15px;">
         <label>Email:</label>

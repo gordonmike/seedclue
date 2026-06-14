@@ -13,14 +13,14 @@ export default jsxRenderer(({ children, title }) => {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title || 'Scoutio'}</title>
+        <title>{title || 'Seed Clue'}</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/app/style.css" />
       </head>
       <body style="margin: 0; font-family: sans-serif; background: #f9f9f9; color: #333;">
         
         <nav style="display: flex; justify-content: space-between; padding: 20px; background: white; border-bottom: 1px solid #eee;">
-          <a href="/" style="font-weight: bold; text-decoration: none; color: black; font-size: 24px;">Scoutio.</a>
+          <a href="/" style="font-weight: bold; text-decoration: none; color: black; font-size: 24px;">Seed Clue</a>
           <div>
             {/* THE MAGIC: If they have the cookie, show "Logout". If not, show "Login"! */}
             {isLoggedIn ? (

@@ -23,7 +23,7 @@ export default createRoute(async (c) => {
   // 4. Render the Pricing HTML
   return c.render(
     <div style="max-width: 600px; margin: 60px auto; text-align: center;">
-      <h2>Upgrade to Scoutio Pro</h2>
+      <h2>Upgrade to Seed Clue Pro</h2>
       <p style="margin-bottom: 40px; color: #666;">Unlock unlimited ideas and premium features.</p>
       
       <div style="border: 1px solid #ddd; padding: 40px; border-radius: 12px; background: white;">
